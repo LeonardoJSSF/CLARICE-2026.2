@@ -1,0 +1,22 @@
+h1{
+    background-color: aqua;
+}
+body{
+    background-color: blueviolet;
+}
+p{
+    background-color: aliceblue;
+}
+
+.chama{
+    text-align: center;
+}
+
+.voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2457a7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

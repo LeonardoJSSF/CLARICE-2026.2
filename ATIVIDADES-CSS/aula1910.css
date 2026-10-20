@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 30px;
+}
+
+img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2457a7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}

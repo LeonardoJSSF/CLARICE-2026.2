@@ -1,0 +1,128 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(135deg, #102a43, #2563eb);
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        .icone {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #dbeafe;
+        }
+
+        /* Apresentação */
+        .boas-vindas {
+            max-width: 1000px;
+            margin: 35px auto 20px;
+            padding: 0 20px;
+        }
+
+        .boas-vindas h2 {
+            font-size: 26px;
+            margin-bottom: 12px;
+            color: #102a43;
+            text-align: center;
+        }
+
+        .boas-vindas p {
+            line-height: 1.7;
+            color: #64748b;
+        }
+
+        /* Lista de atividades */
+        .atividades {
+            max-width: 1000px;
+            margin: 25px auto 50px;
+            padding: 0 20px;
+
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 16px;
+            text-decoration: none;
+            color: #1e293b;
+            box-shadow: 0 5px 18px #0f172a0d;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px #0f172a15;
+        }
+
+        .card .emoji {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #102a43;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .botao {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 11px 17px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Rodapé */
+        footer {
+            background: #102a43;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 22px 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            .boas-vindas h2 {
+                font-size: 22px;
+            }
+        }
