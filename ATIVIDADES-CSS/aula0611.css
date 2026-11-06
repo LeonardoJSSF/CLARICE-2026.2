@@ -1,0 +1,593 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #123B2A;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* CORES DO PROJETO
+   Verde escuro: #123B2A
+   Verde principal: #275E2D
+   Verde claro: #EAF3EA
+   Verde de destaque: #78B77D
+   Branco: #FFFFFF
+*/
+
+
+/* CABEÇALHO */
+
+.header {
+    background-color: #123B2A;
+    border-bottom: 1px solid #2D6540;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo > span {
+    color: #78B77D;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo h2 {
+    font-size: 22px;
+}
+
+.logo small {
+    color: #C5D9C8;
+    font-size: 11px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #78B77D;
+}
+
+
+/* HOME */
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(90deg,
+        rgba(10, 43, 28, 0.96),
+        rgba(10, 43, 28, 0.68)),
+        url("../IMAGENS/IMG-20260820-WA0038.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.tag,
+.section-tag {
+    color: #78B77D;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 18px 0;
+    line-height: 1.15;
+}
+
+.hero h1 span {
+    color: #78B77D;
+}
+
+.hero p {
+    color: #E0EAE1;
+    line-height: 1.7;
+    max-width: 500px;
+    font-size: 15px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.btn,
+.btn-outline {
+    padding: 13px 22px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn {
+    background-color: #78B77D;
+    color: #123B2A;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 1px solid #78B77D;
+    color: #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #78B77D;
+    color: #123B2A;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    background-color: #EAF3EA;
+    color: #183D29;
+    padding: 65px 0;
+}
+
+.sobre-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.sobre .section-tag {
+    color: #275E2D;
+}
+
+.sobre h2 {
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.sobre-text p {
+    color: #526B58;
+    line-height: 1.7;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.info-box {
+    background-color: #D9E9D9;
+    padding: 30px 15px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.info-icon {
+    font-size: 30px;
+    color: #275E2D;
+}
+
+.info-item h3 {
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.info-item p {
+    color: #526B58;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* EQUIPE */
+
+.equipe {
+    padding: 65px 0;
+    background-color: #123B2A;
+}
+
+.equipe h2,
+.projetos h2,
+.habilidades h2 {
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.section-description {
+    color: #C5D9C8;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.team-card {
+    background-color: #1A4A32;
+    border: 1px solid #326B46;
+    border-radius: 12px;
+    padding: 25px 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-7px);
+    border-color: #78B77D;
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #78B77D;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.team-card > span {
+    color: #A7D6A9;
+    font-size: 12px;
+}
+
+.team-card p {
+    color: #D0E0D2;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 12px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    font-size: 11px;
+    color: #A7D6A9;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+
+/* PROJETOS / FUNCIONALIDADES */
+
+.projetos {
+    background-color: #EAF3EA;
+    color: #183D29;
+    padding: 65px 0;
+}
+
+.projetos .section-tag {
+    color: #275E2D;
+}
+
+.projetos .section-description {
+    color: #526B58;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #D4E3D5;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(18, 59, 42, 0.12);
+}
+
+.project-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 18px;
+}
+
+.project-info h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 13px;
+    color: #526B58;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-info a {
+    color: #275E2D;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.project-info a:hover {
+    color: #4C8A55;
+}
+
+
+/* HABILIDADES */
+
+.habilidades {
+    padding: 65px 0;
+    background-color: #1A4A32;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 40px;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.skill-title span:last-child {
+    color: #A7D6A9;
+}
+
+.progress {
+    width: 100%;
+    height: 9px;
+    background-color: #315D42;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #78B77D;
+    border-radius: 20px;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 85%;
+}
+
+.javascript {
+    width: 60%;
+}
+
+.python {
+    width: 50%;
+}
+
+.github {
+    width: 70%;
+}
+
+
+/* CONTATO */
+
+.contato {
+    padding: 55px 0;
+    background-color: #0D3021;
+}
+
+.contato-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.contato h2 {
+    font-size: 27px;
+    margin: 12px 0;
+}
+
+.contato p {
+    color: #D0E0D2;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.contact-info p {
+    margin: 15px 0;
+}
+
+.contact-info a:hover {
+    color: #A7D6A9;
+}
+
+
+/* RODAPÉ */
+
+.footer {
+    background-color: #092719;
+    border-top: 1px solid #28563A;
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    color: #B6CDB9;
+    font-size: 12px;
+}
+
+.footer-logo h2 {
+    font-size: 19px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sobre-content {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .nav {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 380px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-box {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contato-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+}
